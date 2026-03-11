@@ -20,6 +20,12 @@ public class Customer
         set { lastName = value; }
     }
 
+    public string? Email
+    {
+        get { return email; }
+        set { email = value; }
+    }
+}
 public class Item
 {
     private string? name;
@@ -66,5 +72,33 @@ class Program
         Console.WriteLine("Nom : " + item.Name);
         Console.WriteLine("Prix : " + item.Price);
         Console.WriteLine("Quantité : " + item.Quantity);
+
+        Supplier supplier = new Supplier();
+        supplier.Name = "TechSupply";
+        supplier.City = "Paris";
+        supplier.Phone = "0102030405";
+
+        Console.WriteLine("Nom du fournisseur : " + supplier.Name);
+        Console.WriteLine("Ville : " + supplier.City);
+        Console.WriteLine("Téléphone : " + supplier.Phone);
+
+        Category category1 = new Category();
+        category1.Name = "Electronics";
+        category1.Description = "Electronic devices";
+
+        Category category2 = new Category();
+        category2.Name = "Books";
+        category2.Description = "Books and literature";
+
+        Category category3 = new Category();
+        category3.Name = "Clothing";
+        category3.Description = "Clothes and accessories";
+
+        Console.WriteLine("Nom : " + category1.Name);
+        Console.WriteLine("Description : " + category1.Description);
+        Console.WriteLine("Nom : " + category2.Name);
+        Console.WriteLine("Description : " + category2.Description);
+        Console.WriteLine("Nom : " + category3.Name);
+        Console.WriteLine("Description : " + category3.Description);
     }
 }

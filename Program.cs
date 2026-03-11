@@ -20,10 +20,28 @@ public class Customer
         set { lastName = value; }
     }
 
-    public string? Email
+public class Item
+{
+    private string? name;
+    private float price;
+    private int quantity;
+
+    public string? Name
     {
-        get { return email; }
-        set { email = value; }
+        get { return name; }
+        set { name = value; }
+    }
+
+    public float Price
+    {
+        get { return price; }
+        set { price = value; }
+    }
+
+    public int Quantity
+    {
+        get { return quantity; }
+        set { quantity = value; }
     }
 }
 
@@ -39,5 +57,14 @@ class Program
         Console.WriteLine("Prénom : " + customer.FirstName);
         Console.WriteLine("Nom : " + customer.LastName);
         Console.WriteLine("Email : " + customer.Email);
+
+        Item item = new Item();
+        item.Name = "Smartphone";
+        item.Price = 800;
+        item.Quantity = 25;
+
+        Console.WriteLine("Nom : " + item.Name);
+        Console.WriteLine("Prix : " + item.Price);
+        Console.WriteLine("Quantité : " + item.Quantity);
     }
 }

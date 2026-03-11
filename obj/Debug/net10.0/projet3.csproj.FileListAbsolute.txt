@@ -1,0 +1,15 @@
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\bin\Debug\net10.0\projet3.exe
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\bin\Debug\net10.0\projet3.deps.json
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\bin\Debug\net10.0\projet3.runtimeconfig.json
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\bin\Debug\net10.0\projet3.dll
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\bin\Debug\net10.0\projet3.pdb
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\obj\Debug\net10.0\projet3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\obj\Debug\net10.0\projet3.AssemblyInfoInputs.cache
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\obj\Debug\net10.0\projet3.AssemblyInfo.cs
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\obj\Debug\net10.0\projet3.csproj.CoreCompileInputs.cache
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\obj\Debug\net10.0\projet3.sourcelink.json
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\obj\Debug\net10.0\projet3.dll
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\obj\Debug\net10.0\refint\projet3.dll
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\obj\Debug\net10.0\projet3.pdb
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\obj\Debug\net10.0\projet3.genruntimeconfig.cache
+C:\Users\chazart\Documents\mesprojet\projetcsharp\projet3\obj\Debug\net10.0\ref\projet3.dll

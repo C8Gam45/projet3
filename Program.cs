@@ -4,23 +4,23 @@ namespace projet3;
 
 public class Customer
 {
-    private string firstName;
-    private string lastName;
-    private string email;
+    private string? firstName;
+    private string? lastName;
+    private string? email;
 
-    public string FirstName
+    public string? FirstName
     {
         get { return firstName; }
         set { firstName = value; }
     }
 
-    public string LastName
+    public string? LastName
     {
         get { return lastName; }
         set { lastName = value; }
     }
 
-    public string Email
+    public string? Email
     {
         get { return email; }
         set { email = value; }

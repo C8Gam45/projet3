@@ -51,7 +51,7 @@ public class Item
     }
 }
 
--+public class Supplier
+public class Supplier
 {
     private string? name;
     private string? city;

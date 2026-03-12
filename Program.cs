@@ -51,6 +51,98 @@ public class Item
     }
 }
 
+// Exercice 5 - Supplier
+public class Supplier
+{
+    private string? name;
+    private string? city;
+    private string? phone;
+
+    public string? Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+
+    public string? City
+    {
+        get { return city; }
+        set { city = value; }
+    }
+
+    public string? Phone
+    {
+        get { return phone; }
+        set { phone = value; }
+    }
+}
+
+// Exercice 6 - Category
+public class Category
+{
+    private string? name;
+    private string? description;
+
+    public string? Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+
+    public string? Description
+    {
+        get { return description; }
+        set { description = value; }
+    }
+}
+
+// Exercice 7 - Order (properties instead of getters/setters)
+public class Order
+{
+    private int id;
+    private string? product;
+    private int quantity;
+
+    // Previous getters/setters (commented out)
+    // public int GetId() { return id; }
+    // public void SetId(int value) { id = value; }
+    // public string? GetProduct() { return product; }
+    // public void SetProduct(string? value) { product = value; }
+    // public int GetQuantity() { return quantity; }
+    // public void SetQuantity(int value) { quantity = value; }
+
+    // New public properties
+    public int Id { get; set; }
+    public string? Product { get; set; }
+    public int Quantity { get; set; }
+}
+
+// Exercice 8 - ProductId with readonly Id property
+public class ProductId
+{
+    private int id;
+    private string? name;
+    private float price;
+
+    // read-only Id; value can be set in constructor
+    public int Id { get; }
+    public string? Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+    public float Price
+    {
+        get { return price; }
+        set { price = value; }
+    }
+
+    public ProductId(int id)
+    {
+        this.Id = id;
+    }
+}
+
 class Program
 {
     static void Main(string[] args)
@@ -100,5 +192,27 @@ class Program
         Console.WriteLine("Description : " + category2.Description);
         Console.WriteLine("Nom : " + category3.Name);
         Console.WriteLine("Description : " + category3.Description);
+
+        // Exercice 7 - utilisation de la classe Order avec propriétés
+        Order order = new Order();
+        order.Id = 1001;
+        order.Product = "Laptop";
+        order.Quantity = 2;
+
+        Console.WriteLine("Order Id : " + order.Id);
+        Console.WriteLine("Produit : " + order.Product);
+        Console.WriteLine("Quantité : " + order.Quantity);
+
+        // Exercice 8 - ProductId with readonly Id
+        ProductId product = new ProductId(1);
+        product.Name = "Tablet";
+        product.Price = 600;
+
+        Console.WriteLine("Id du produit : " + product.Id);
+        Console.WriteLine("Nom : " + product.Name);
+        Console.WriteLine("Prix : " + product.Price);
+
+        // the following line would not compile because Id has no setter
+        // product.Id = 2;
     }
 }

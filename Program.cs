@@ -51,8 +51,7 @@ public class Item
     }
 }
 
-// Exercice 5 - Supplier
-public class Supplier
+-+public class Supplier
 {
     private string? name;
     private string? city;
@@ -77,7 +76,6 @@ public class Supplier
     }
 }
 
-// Exercice 6 - Category
 public class Category
 {
     private string? name;
@@ -96,35 +94,24 @@ public class Category
     }
 }
 
-// Exercice 7 - Order (properties instead of getters/setters)
 public class Order
 {
     private int id;
     private string? product;
     private int quantity;
 
-    // Previous getters/setters (commented out)
-    // public int GetId() { return id; }
-    // public void SetId(int value) { id = value; }
-    // public string? GetProduct() { return product; }
-    // public void SetProduct(string? value) { product = value; }
-    // public int GetQuantity() { return quantity; }
-    // public void SetQuantity(int value) { quantity = value; }
-
-    // New public properties
+    
     public int Id { get; set; }
     public string? Product { get; set; }
     public int Quantity { get; set; }
 }
 
-// Exercice 8 - ProductId with readonly Id property
 public class ProductId
 {
     private int id;
     private string? name;
     private float price;
 
-    // read-only Id; value can be set in constructor
     public int Id { get; }
     public string? Name
     {
@@ -193,7 +180,6 @@ class Program
         Console.WriteLine("Nom : " + category3.Name);
         Console.WriteLine("Description : " + category3.Description);
 
-        // Exercice 7 - utilisation de la classe Order avec propriétés
         Order order = new Order();
         order.Id = 1001;
         order.Product = "Laptop";
@@ -203,7 +189,6 @@ class Program
         Console.WriteLine("Produit : " + order.Product);
         Console.WriteLine("Quantité : " + order.Quantity);
 
-        // Exercice 8 - ProductId with readonly Id
         ProductId product = new ProductId(1);
         product.Name = "Tablet";
         product.Price = 600;
@@ -212,7 +197,6 @@ class Program
         Console.WriteLine("Nom : " + product.Name);
         Console.WriteLine("Prix : " + product.Price);
 
-        // the following line would not compile because Id has no setter
-        // product.Id = 2;
+        
     }
 }
